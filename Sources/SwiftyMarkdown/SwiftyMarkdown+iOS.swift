@@ -75,7 +75,7 @@ extension SwiftyMarkdown {
 		case .boldItalic:
 			globalItalic = true
 			globalBold = true
-		case .normal:
+		case .normal, .semibold:
 			break
 		}
 
@@ -132,13 +132,17 @@ extension SwiftyMarkdown {
         if ignoreDynamicFontSize, let fontSize = fontSize {
             font = font.withSize(fontSize)
         }
-		
+
 		if globalItalic, let italicDescriptor = font.fontDescriptor.withSymbolicTraits(.traitItalic) {
 			font = UIFont(descriptor: italicDescriptor, size: fontSize ?? 0)
 		}
 		if globalBold, let boldDescriptor = font.fontDescriptor.withSymbolicTraits(.traitBold) {
 			font = UIFont(descriptor: boldDescriptor, size: fontSize ?? 0)
 		}
+
+        if useSystemFont {
+            font = .systemFont(ofSize: fontSize ?? 0, weight: systemFontWeight)
+        }
 		
 		return font
 		

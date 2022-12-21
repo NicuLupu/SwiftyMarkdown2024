@@ -80,6 +80,7 @@ enum MarkdownLineStyle : LineStyling {
 
 @objc public enum FontStyle : Int {
 	case normal
+    case semibold
 	case bold
 	case italic
 	case boldItalic
@@ -252,6 +253,10 @@ If that is not set, then the system default will be used.
 
     /// **iOS only** : Setting this boolean to true will force using the exact size set for each style if available.
     public var ignoreDynamicFontSize : Bool = false
+
+    public var useSystemFont: Bool = false
+
+    public var systemFontWeight: UIFont.Weight = .regular
 
 
 	
