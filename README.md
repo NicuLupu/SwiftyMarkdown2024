@@ -9,7 +9,7 @@ SwiftyMarkdown converts Markdown files and strings into `NSAttributedString`s us
 - [Front Matter](#front-matter)
 - [Appendix](#appendix)
 
-## Fully Rebuilt For 2020!
+## Fully Rebuilt For 2024!
 
 SwiftyMarkdown now features a more robust and reliable rules-based line processing and character tokenisation engine. It has added support for images stored in the bundle (`![Image](<Name In bundle>)`), codeblocks, blockquotes, and unordered lists!
 
