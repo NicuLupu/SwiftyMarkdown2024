@@ -86,7 +86,7 @@
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* String+SwiftyMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SwiftyMarkdown.swift"; sourceTree = "<group>"; };
 		"SwiftyMarkdown::SwiftyMarkdown::Product" /* SwiftyMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwiftyMarkdown::SwiftyMarkdownTests::Product" /* SwiftyMarkdownTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyMarkdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyMarkdown::SwiftyMarkdownTests::Product" /* SwiftyMarkdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftyMarkdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +466,7 @@
 		OBJ_60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -491,6 +492,7 @@
 		OBJ_61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
