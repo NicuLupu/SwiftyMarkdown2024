@@ -362,7 +362,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -no-verify-emitted-module-interface";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftyMarkdown;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -392,7 +392,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -no-verify-emitted-module-interface";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftyMarkdown;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
